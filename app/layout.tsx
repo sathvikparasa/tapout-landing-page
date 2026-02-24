@@ -13,7 +13,7 @@ const plusJakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "TapOut — Never Get Ticketed Again",
+  title: "TapOut: Parking Alerts",
   description: "Real-time TAPS enforcement alerts for UC Davis students. Community-powered parking intelligence.",
   keywords: ["UC Davis", "parking", "TAPS", "parking tickets", "TapOut"],
   authors: [{ name: "TapOut" }],
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     icon: "/favicon.ico",
   },
   openGraph: {
-    title: "TapOut — Never Get Ticketed Again",
+    title: "TapOut: Parking Alerts",
     description: "Real-time TAPS enforcement alerts for UC Davis students.",
     type: "website",
   },
