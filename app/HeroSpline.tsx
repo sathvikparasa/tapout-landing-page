@@ -29,11 +29,13 @@ export default function HeroSpline() {
         </div>
       )}
 
-      <Spline
-        scene="https://prod.spline.design/60ETvIjjQN428da4/scene.splinecode"
-        style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
-        onLoad={() => setLoaded(true)}
-      />
+      <div className="spline-mobile-wrapper" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}>
+        <Spline
+          scene="https://prod.spline.design/60ETvIjjQN428da4/scene.splinecode"
+          style={{ width: '100%', height: '100%' }}
+          onLoad={() => setLoaded(true)}
+        />
+      </div>
     </>
   );
 }

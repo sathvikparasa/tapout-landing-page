@@ -37,3 +37,13 @@ h1, h2, h3, h4, h5, h6 {
 @keyframes spin {
   to { transform: rotate(360deg); }
 }
+
+/* Mobile: scale Spline scene (designed at 1440×900) down to viewport width */
+@media (max-width: 767px) {
+  .spline-mobile-wrapper {
+    width: 1440px !important;
+    height: 900px !important;
+    transform-origin: top left;
+    transform: scale(calc(100vw / 1440px));
+  }
+}
