@@ -4,9 +4,9 @@ import CoverageMap from './CoverageMap';
 import { lots } from './lots';
 
 const features = [
-  { num: '01', title: 'Live\nSightings',          desc: 'Students report TAPS the moment they spot them. You get notified instantly, even before you think to check.' },
+  { num: '01', title: 'Instant\nReports',          desc: 'Students report TAPS the moment they spot them. You get notified instantly, even before you think to check.' },
   { num: '02', title: 'Smart\nAlerts',             desc: "Only pings when you're parked at an affected lot. Set your lot, park, and let TapOut watch your back." },
-  { num: '03', title: 'Enforcement\nPredictions',  desc: 'Historical patterns power AI predictions. Know your risk before you even pull in.' },
+  { num: '03', title: 'Parking\nPredictions',  desc: 'Historical patterns power AI predictions. Know your risk before you even pull in.' },
   { num: '04', title: 'Community\nFeed',           desc: 'Upvote real sightings, flag false ones. The crowd keeps the data honest, always.' },
 ];
 
@@ -138,7 +138,7 @@ export default function Home() {
           <Image src="/tapout-logo.png" alt="TapOut" width={22} height={22} className="rounded-[5px] opacity-60" />
           <span>© 2026 TapOut · UC Davis</span>
         </div>
-        <span>Built for Aggies, by Aggies</span>
+        <span>Made with love by fellow  Aggies.</span>
       </footer>
 
     </div>
