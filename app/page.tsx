@@ -13,10 +13,9 @@ const features = [
 const faqs = [
   { num: 'Q1', q: 'How do I report a TAPS sighting?',    a: 'Open the app, tap the Report button, and select your current lot. Sightings go live within seconds for everyone parked nearby.' },
   { num: 'Q2', q: 'When will TapOut be available?',       a: "We're currently in closed beta at UC Davis. Join the waitlist above to be first in line when we open up." },
-  { num: 'Q3', q: 'What parking lots are covered?',       a: 'All major UC Davis structures — ARC, Pavilion, Hutchison, Gateway, Visitor, Tercero, Bookstore, and Mondavi. Coverage expands as the community grows.' },
+  { num: 'Q3', q: 'What parking lots are covered?',       a: 'ARC, Memorial Union (Quad), Pavilion (Hutchison), and Tercero. Coverage expands as the community grows.' },
   { num: 'Q4', q: 'How accurate are community reports?',  a: 'Users can upvote real sightings and flag false ones. The crowd self-regulates, and high-activity lots maintain strong real-time accuracy.' },
   { num: 'Q5', q: 'What data do you store?',              a: "We don't store any of your email beyond what's needed for basic authentication — nothing you do in the app can be tied back to you personally." },
-  { num: 'Q6', q: 'How do I delete my account?',          a: 'Go to Settings → Account → Delete Account. Your data is removed immediately and permanently with no recovery period.' },
 ];
 
 export default function Home() {
@@ -145,7 +144,7 @@ export default function Home() {
       <section id="support" className="border-t-[3px] border-[#0a0a0a]">
         <div className="flex justify-between items-end px-6 md:px-14 py-8 md:pt-14 md:pb-7 border-b border-black/10">
           <p className="text-[11px] tracking-[0.18em] uppercase opacity-35">Support</p>
-          <p className="text-[11px] tracking-[0.18em] uppercase opacity-35">06 Questions</p>
+          <p className="text-[11px] tracking-[0.18em] uppercase opacity-35">05 Questions</p>
         </div>
 
         {faqs.map((faq, i) => (
