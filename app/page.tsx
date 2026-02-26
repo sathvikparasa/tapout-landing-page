@@ -10,6 +10,15 @@ const features = [
   { num: '04', title: 'Community\nFeed',           desc: 'Upvote real sightings, flag false ones. The crowd keeps the data honest, always.' },
 ];
 
+const faqs = [
+  { num: 'Q1', q: 'How do I report a TAPS sighting?',    a: 'Open the app, tap the Report button, and select your current lot. Sightings go live within seconds for everyone parked nearby.' },
+  { num: 'Q2', q: 'When will TapOut be available?',       a: "We're currently in closed beta at UC Davis. Join the waitlist above to be first in line when we open up." },
+  { num: 'Q3', q: 'What parking lots are covered?',       a: 'All major UC Davis structures — ARC, Pavilion, Hutchison, Gateway, Visitor, Tercero, Bookstore, and Mondavi. Coverage expands as the community grows.' },
+  { num: 'Q4', q: 'How accurate are community reports?',  a: 'Users can upvote real sightings and flag false ones. The crowd self-regulates, and high-activity lots maintain strong real-time accuracy.' },
+  { num: 'Q5', q: 'What data do you store?',              a: "We don't store any of your email beyond what's needed for basic authentication — nothing you do in the app can be tied back to you personally." },
+  { num: 'Q6', q: 'How do I delete my account?',          a: 'Go to Settings → Account → Delete Account. Your data is removed immediately and permanently with no recovery period.' },
+];
+
 export default function Home() {
   return (
     <div className="bg-white text-[#0a0a0a]" style={{ fontFamily: 'var(--font-dm-sans), system-ui, sans-serif' }}>
@@ -60,7 +69,7 @@ export default function Home() {
             </p>
           </div>
           <div className="flex gap-3 self-start flex-wrap">
-            <a href="#" className="inline-flex items-center gap-3 bg-[#0a0a0a] text-white px-[26px] py-[14px] no-underline opacity-40 cursor-not-allowed pointer-events-none">
+            {/* <a href="#" className="inline-flex items-center gap-3 bg-[#0a0a0a] text-white px-[26px] py-[14px] no-underline opacity-40 cursor-not-allowed pointer-events-none">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
                 <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11"/>
               </svg>
@@ -68,7 +77,7 @@ export default function Home() {
                 <div className="text-[10px] opacity-65 font-normal tracking-[0.06em] uppercase">Download on the</div>
                 <div className="text-[17px] font-bold tracking-[-0.3px]">App Store</div>
               </div>
-            </a>
+            </a> */}
 
             <a href="https://forms.gle/7DjvSppi1Q3WQrNJA" target="_blank" rel="noopener noreferrer"
               className="inline-flex items-center gap-3 bg-[#9CAF88] text-[#0a0a0a] px-[26px] py-[14px] no-underline">
@@ -130,6 +139,54 @@ export default function Home() {
             </div>
           </div>
         ))}
+      </section>
+
+      {/* ── Support ── */}
+      <section id="support" className="border-t-[3px] border-[#0a0a0a]">
+        <div className="flex justify-between items-end px-6 md:px-14 py-8 md:pt-14 md:pb-7 border-b border-black/10">
+          <p className="text-[11px] tracking-[0.18em] uppercase opacity-35">Support</p>
+          <p className="text-[11px] tracking-[0.18em] uppercase opacity-35">06 Questions</p>
+        </div>
+
+        {faqs.map((faq, i) => (
+          <div key={i} className="grid px-6 py-7 md:px-14 md:py-10 border-b border-black/10 items-start gap-x-6 md:gap-x-10 [grid-template-columns:48px_1fr] md:[grid-template-columns:72px_1fr_1fr]">
+            <span className="text-[12px] font-bold text-[#9CAF88] tracking-[0.08em] pt-[3px]">{faq.num}</span>
+            <div className="flex flex-col gap-3 md:contents">
+              <p className="font-bold text-[15px] tracking-[-0.3px] leading-snug">{faq.q}</p>
+              <p className="text-[15px] leading-[1.75] text-black/50 max-w-[400px]">{faq.a}</p>
+            </div>
+          </div>
+        ))}
+
+        {/* Contact row */}
+        <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-5 px-6 md:px-14 py-10">
+          <div>
+            <p className="text-[11px] tracking-[0.16em] uppercase opacity-35 mb-2">Still have questions?</p>
+            <p className="text-[15px] leading-[1.75] text-black/50">Reach out — we read everything.</p>
+          </div>
+          <div className="flex gap-3 flex-wrap">
+            <a href="mailto:ucd.tapout@gmail.com"
+              className="inline-flex items-center gap-3 bg-[#0a0a0a] text-white px-[26px] py-[14px] no-underline">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="white">
+                <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/>
+              </svg>
+              <div className="text-left leading-[1.2]">
+                <div className="text-[10px] opacity-65 font-normal tracking-[0.06em] uppercase">Email us</div>
+                <div className="text-[15px] font-bold tracking-[-0.3px]">ucd.tapout@gmail.com</div>
+              </div>
+            </a>
+            <a href="https://forms.gle/ZtoMx4skv27RKYz98" target="_blank" rel="noopener noreferrer"
+              className="inline-flex items-center gap-3 bg-[#9CAF88] text-[#0a0a0a] px-[26px] py-[14px] no-underline">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="#0a0a0a">
+                <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 3c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6zm7 13H5v-.23c0-.62.28-1.2.76-1.58C7.47 15.82 9.64 15 12 15s4.53.82 6.24 2.19c.48.38.76.97.76 1.58V19z"/>
+              </svg>
+              <div className="text-left leading-[1.2]">
+                <div className="text-[10px] opacity-60 font-normal tracking-[0.06em] uppercase">Submit a request</div>
+                <div className="text-[15px] font-bold tracking-[-0.3px]">Contact Form</div>
+              </div>
+            </a>
+          </div>
+        </div>
       </section>
 
       {/* ── Footer ── */}
