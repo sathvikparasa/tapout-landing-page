@@ -15,7 +15,7 @@ const faqs = [
   { num: 'Q2', q: 'When will TapOut be available?',       a: "We're currently in closed beta at UC Davis. Join the waitlist above to be first in line when we open up." },
   { num: 'Q3', q: 'What parking lots are covered?',       a: 'ARC, Memorial Union (Quad), Pavilion (Hutchison), and Tercero. Coverage expands as the community grows.' },
   { num: 'Q4', q: 'How accurate are community reports?',  a: 'Users can upvote real sightings and flag false ones. The crowd self-regulates, and high-activity lots maintain strong real-time accuracy.' },
-  { num: 'Q5', q: 'What data do you store?',              a: "We don't store any of your email beyond what's needed for basic authentication — nothing you do in the app can be tied back to you personally." },
+  { num: 'Q5', q: 'What data do you store?',              a: "We don't store any of your email beyond what's needed for basic authentication." },
 ];
 
 export default function Home() {
