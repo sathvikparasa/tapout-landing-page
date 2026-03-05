@@ -78,7 +78,7 @@ export default function Home() {
               </div>
             </a>
 
-            <a href="https://forms.gle/7DjvSppi1Q3WQrNJA" target="_blank" rel="noopener noreferrer"
+            {/* <a href="https://forms.gle/7DjvSppi1Q3WQrNJA" target="_blank" rel="noopener noreferrer"
               className="inline-flex items-center gap-3 bg-[#9CAF88] text-[#0a0a0a] px-[26px] py-[14px] no-underline">
               <svg width="22" height="22" viewBox="0 0 24 24" fill="#0a0a0a">
                 <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 11h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"/>
@@ -87,7 +87,7 @@ export default function Home() {
                 <div className="text-[10px] opacity-60 font-normal tracking-[0.06em] uppercase">Be first to know</div>
                 <div className="text-[17px] font-bold tracking-[-0.3px]">Join Waitlist</div>
               </div>
-            </a>
+            </a> */}
           </div>
         </div>
 
